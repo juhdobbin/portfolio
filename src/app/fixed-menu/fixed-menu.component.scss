@@ -1,0 +1,57 @@
+@import "../../assets/scss/colors.scss";
+
+.card {
+    max-width: 300px;
+    box-shadow: 0 0 0 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    // font-family: "Poiret One", cursive;
+
+    .mat-card-header {
+        flex-direction: column;
+        align-items: center;
+        font-family: "Poiret One", cursive;
+
+        mat-card-title {
+            font-size: 2.3rem;
+            margin: 20px 0;
+            color: $verde;
+        }
+        mat-card-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: $rosa-velho;
+        }
+        .header-image {
+            width: 150px;
+            height: 150px;
+            background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQEay7DLKmYsDA/profile-displayphoto-shrink_400_400/0?e=1598486400&v=beta&t=FBE1qnCbYlTWmb5ieaxjypMgsjQdYxVs_YymsuFQ9RI");
+            background-size: cover;
+        }
+    }
+    .mat-card-content {
+        text-align: justify;
+        [class^="flaticon-"]:before {
+            margin-left: 0;
+        }
+        i {
+            margin-right: 10px;
+        }
+        .pessoal-icons {
+            margin-top: 30px;
+            > div {
+                margin-bottom: 10px;
+                i {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    a {
+        color: #bf6b7b;
+        text-decoration: none;
+    }
+}

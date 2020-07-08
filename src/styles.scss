@@ -1,1 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import "../src/assets/css/bootstrap.min.css";
+
+@import "../src/assets/fonts/flaticon.css";
+@import "../src/assets/scss/colors.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poiret One", cursive;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color: #555;
+}
+.red-tooltip {
+    background-color: $rosa-velho;
+    color: black;
+    font-size: 0.7rem;
+    padding: 5px;
+    margin: 0;
+}
+h1,
+.mat-typography h1 {
+    font-family: $font-titulo;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    &::after {
+        content: "";
+        // width: calc(100% - 40px);
+        width: 30px;
+        height: 1px;
+        background-color: #bf6b7b;
+        position: absolute;
+        bottom: 20px;
+        left: calc(50% - 15px);
+        // right: 20px;
+    }
+}
+h2,
+.mat-typography h2 {
+    font-family: $font-titulo;
+    font-size: 1.6rem;
+    color: $azul;
+    // text-align: center;
+    // margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}

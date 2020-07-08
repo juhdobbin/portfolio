@@ -1,0 +1,52 @@
+@import "../../../src/assets/scss/colors.scss";
+
+ul {
+    list-style: none;
+    li {
+        position: relative;
+        line-height: 30px;
+        // &::before {
+
+        // }
+        &.alto::before {
+            background: url("../../assets/img/014-france-2.png");
+        }
+        &.medio::before {
+            background: url("../../assets/img/016-france-1.png");
+        }
+        &.baixo::before {
+            background: url("../../assets/img/015-france.png");
+        }
+        &.alto::before,
+        &.medio::before,
+        &.baixo::before {
+            content: "";
+            background-size: 50%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            left: -30px;
+        }
+        &.list-inline-item + .list-inline-item {
+            margin-left: 40px;
+        }
+    }
+}
+.legenda {
+    margin-bottom: 40px;
+    text-align: right;
+}
+@media only screen and (max-width: 600px) {
+    .legenda {
+        margin-left: 40px!important;
+        text-align: left!important;
+    }
+    li{
+        &.list-inline-item + .list-inline-item {
+            margin-left: 0!important;
+        }
+    }
+}

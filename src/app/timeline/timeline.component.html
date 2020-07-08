@@ -1,0 +1,22 @@
+<div class="timeline">
+    <div class="content" *ngFor="let item of lista">
+        <div class="texto">
+            <span *ngIf="item.data">{{ item.data }}</span>
+            <h4 class="titulo" *ngIf="item.titulo">
+                {{ item.titulo }}
+            </h4>
+            <h5 class="subtitulo" *ngIf="item.subtitulo">
+                {{ item.subtitulo }}
+            </h5>
+            <p class="descricao" *ngIf="item.descricao">
+                {{ item.descricao }}
+            </p>
+            <a
+                *ngIf="item.link"
+                href="item.link.url"
+                [title]="item.link.titulo"
+                >{{ item.link.titulo }}</a
+            >
+        </div>
+    </div>
+</div>

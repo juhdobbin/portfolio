@@ -1,0 +1,79 @@
+@import "../../assets/scss/colors.scss";
+
+@media (max-width: 600px) {
+    .content {
+        padding-bottom: 40px!important;
+        &:before {
+            left: 5% !important;
+        }
+        &:after {
+            left: calc(5% - 4px) !important;
+        }
+        .texto {
+            width: 100%!important;
+            text-align: left!important;
+        }
+        &:nth-child(odd) {
+            align-items: flex-start!important;
+
+            .texto {
+                text-align: left!important;
+            }
+        }
+    }
+}
+.timeline {
+    h3,
+    h4 {
+        margin-bottom: 0;
+    }
+    .content {
+        width: 100%;
+        position: relative;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        flex: 2;
+        .texto {
+            width: 50%;
+            text-align: right;
+            padding: 0 30px;
+        }
+        &:before {
+            content: "";
+            height: 100%;
+            width: 2px;
+            background-color: $rosa-velho;
+            position: absolute;
+            right: 50%;
+        }
+        &:after {
+            content: "";
+            height: 10px;
+            width: 10px;
+            background-color: $rosa-velho;
+            border-radius: 50%;
+            position: absolute;
+            top: 45%;
+            right: calc(50% - 4px);
+        }
+
+        &:nth-child(odd) {
+            align-items: flex-end;
+
+            .texto {
+                text-align: left;
+            }
+        }
+        span {
+            font-family: $font-titulo;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+        a {
+            color: $rosa-velho;
+        }
+    }
+}
+
+

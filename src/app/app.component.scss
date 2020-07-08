@@ -1,0 +1,42 @@
+@import "../assets/scss/colors.scss";
+
+.background {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+mat-toolbar {
+    height: 64px;
+    position: fixed;
+    z-index: 100;
+    width: 100% !important;
+    right: 0;
+    top: 0;
+    a {
+        color: $rosa-velho;
+        // font-size: 1rem;
+        font-family: $font-titulo;
+        padding: 10px 0;
+        // vertical-align: middle;
+        cursor: pointer;
+
+        + a {
+            margin-left: 10px;
+        }
+    }
+    i {
+        color: $verde;
+    }
+}
+div {
+    padding-top: 100px;
+    &:last-child{
+        margin-bottom: 100px;
+    }
+}
+mat-sidenav-content{
+    padding-top: 80px;
+}
