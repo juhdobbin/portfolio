@@ -1,3 +1,2 @@
-# Resume
 
-Portfólio criado em Angular.
+Portfolio criado em Angular.
